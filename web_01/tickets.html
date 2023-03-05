@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新一代設計展-Tickets</title>
+  <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--nav-->
+  <div class="nav">
+    <img src="img/LOGO.png" alt="">
+      <a href="home.html" >Home</a>
+      <a href="news.html">News</a>
+      <a href="discover.html">Discover</a>
+      <a href="tickets.html"style="font-size: 30px; text-decoration: underline;">tickets</a>
+  </div>
+    
+<div class="center">
+        <h1 style="text-align: center; margin-top: 50px;">Tickets</h1>
+        <form action="tickets.php" method="post" id="form" class="ticketform">
+                <input type="text" class="newinput" name="first_name" id="first_name" placeholder="名字（First name）" required>
+                <input type="text" class="newinput" name="last_name" id="last_name" placeholder="姓氏（Last name）" required>
+                <input type="text" class="newinput" name="phone" id="phone" placeholder="手機號碼（Phone）" required>
+                <input type="password" class="newinput" name="password" id="password" placeholder="會員密碼（Password）" required>
+                <span class="veri col-1" style="font-size:40px; font-family: Papyrus; user-select: none;"></span>
+                <input type="text" class="newinput " name="veri" id="captcha" placeholder="數字驗證（Verification）" required>
+                <input type="submit" value="送出（Submit）">
+            </form>
+          </div>
+<!--footer-->
+<div class="footer">
+  <!--social software-->
+<img src="./img/facebook.png" alt="" style="height: 40px;">
+<img src="./img/google.png" alt="" style="height: 40px;">
+Copyright © 2023 YODEX All Rights Reserved
+</div>
+<!--src-->
+  <script src="./jquery/jquery.js"></script>
+  <script src="./bootstrap/bootstrap.js"></script>
+</body>
+</html>
+
+<script>
+  $(".veri").load("veri.php");
+</script>
