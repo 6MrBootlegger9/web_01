@@ -11,13 +11,18 @@
 <body>
   <!--nav-->
 
-  <div class="nav">
-    <img src="img/LOGO.png" alt="">
-    <a href="home.html" style="font-size: 30px; text-decoration: underline;">Home</a>
-    <a href="news.html">News</a>
-    <a href="discover.html">Discover</a>
-    <a href="tickets.html">Tickets</a>
-  </div>
+      <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <img src="./img/LOGO.png" style="height: 40px;" alt="">
+            <a class=" nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+            <a class=" nav-link" href="news.html">News</a>
+            <a class=" nav-link" href="discover">Discover</a>
+            <a class=" nav-link" href="tickets.html">Tickets</a>
+          </div>
+        </div>
+      </nav>
   <!--slider-->
   <main style="margin-top: 45px;">
     <div id="Slider" class="carousel slide my-2 mx-auto" data-ride="carousel" style="width: 1000px; height: 500px;">
@@ -86,12 +91,10 @@
   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perspiciatis repellendus sapiente dignissimos excepturi voluptate eaque, laudantium laboriosam cupiditate ipsa iure ut? Laborum impedit cupiditate vitae, animi modi inventore quia.</div>
  </div>
   <!--footer-->
-  <div class="footer">
-    <!--social software-->
-    <img src="./img/facebook.png" alt="" style="height: 40px;">
-    <img src="./img/google.png" alt="" style="height: 40px;">
-    Copyright © 2023 YODEX All Rights Reserved
-  </div>
+  <!--social software-->
+      <img src="./img/facebook.png" alt="" style="height: 40px; left: 1px;" class="fixed-bottom">
+      <img src="./img/google.png" alt="" style="height: 40px; left: 42px;" class="fixed-bottom">
+      <footer class="fixed-bottom text-center">Copyright © 2023 YODEX All Rights Reserved</footer>
   <!--src-->
   <script src="./jquery/jquery.js"></script>
   <script src="./bootstrap/bootstrap.js"></script>
